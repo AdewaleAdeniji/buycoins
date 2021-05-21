@@ -1,0 +1,17 @@
+{
+  "short_name": "GitFinder",
+  "name": "GitFinder App",
+  "icons": [
+   
+    {
+      "src": "assets/favicon.ico",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#24292e",
+  "background_color": "#ffffff",
+  "orientation":"portrait-primary"
+}

@@ -165,7 +165,15 @@ function mapRepoData({
   
   `;
 }
-
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js')
+  .then(()=>{
+      //console.log("serviceworker registered"); 
+  })
+  .catch((err)=>{
+      //console.log("serviceworker not registered"+err);
+  })
+}  
 function formatDate(date_str) {
   const d = new Date(date_str);
   const ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(d);
